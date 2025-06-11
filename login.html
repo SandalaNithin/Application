@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Create Profile</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="./1img/1.webp" alt="Logo" class="logo" />
+    </header>
+
+    <form class="profile-form">
+      <h2>Create Profile</h2>
+
+      <div class="profile-pic-section">
+        <div class="profile-pic-placeholder">
+          <span class="icon">👤+</span>
+        </div>
+        <input type="file" id="fileUpload" accept="image/*" style="display: none;" />
+        <button type="button" class="upload-btn" onclick="document.getElementById('fileUpload').click()">Upload Profile</button>
+      </div>
+
+      <label>Date of birth</label>
+      <input type="date" />
+
+      <label>Country</label>
+      <select>
+        <option value="India">India</option>
+        <option value="USA">USA</option>
+        <option value="UK">UK</option>
+        <option value="nepal">nepal</option>
+      </select>
+
+      <label>Address</label>
+      <input type="text" placeholder="" />
+
+      <div class="address-fields">
+        <div>
+        <label>Cite</label>
+        <input type="text" placeholder="" class="ip" />
+        </div>
+
+        <div>
+        <label>Street</label>
+        <input type="text" placeholder="" class="ip"/>
+       </div>
+
+       <div>
+       <label>Zip Code</label>
+        <input type="text" placeholder="" class="ip"/>
+       </div>
+
+      </div>
+
+      <label>Languages</label>
+      <input type="text" placeholder="" />
+     
+        <span class="tag">English X</span>
+        <span class="tag">Hindi X</span>
+        <span class="tag">telugu X</span>
+    
+
+      <div class="form-buttons">
+        <button type="button" class="back-btn">Back</button>
+        <button type="submit" class="next-btn">Next</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
